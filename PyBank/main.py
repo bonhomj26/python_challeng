@@ -28,12 +28,11 @@ with open(csvpath, newline="") as csvfile:
     average_revenue = sum(change_in_revenue) / len(change_in_revenue)
     total_months = len(months)
     
-    # Here, max is used to determine the greatest increase in the revenue
+    # Here, max is used to determine the greatest increase and decrease in the revenue
     greatest_increase = max(change_in_revenue)
-    # greatest decrease in revenue
     greatest_decrease = min(change_in_revenue)
 
-    # Budget Result
+    # Fanancial Analysis Result
     print("Financial Analysis")
 
     print("....................................................................................")
